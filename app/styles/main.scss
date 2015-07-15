@@ -1,0 +1,583 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+@font-face {
+  font-family: Source-Sans-Pro-Bold-It;
+  src: url(/fonts/SourceSansPro-BoldIt.otf);
+}
+
+
+@font-face {
+  font-family: SourceSansProRegular;
+  src: url(/fonts/SourceSansPro-Regular.otf);
+}
+
+
+@font-face {
+  font-family: SourceSansProLight;
+  src: url(/fonts/SourceSansPro-Light.otf);
+}
+
+
+@font-face {
+  font-family: SourceSansProBold;
+  src: url(/fonts/SourceSansPro-Bold.otf);
+}
+
+
+@font-face {
+  font-family: SourceSansProSemibold;
+  src: url(/fonts/SourceSansPro-Semibold.otf);
+}
+
+
+@font-face {
+  font-family: NewsGothicMT;
+  src: url(/fonts/NewsGothicMT);
+}
+
+@font-face {
+  font-family: Couture-Italic;
+  src: url(/fonts/couture-bldit.otf);
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(/fonts/BebasNeue.otf);
+}
+
+
+// variables
+
+$font-stack-1: Source-Sans-Pro-Bold-It, Couture-Italic, Calibri, Sans-Serif;
+$font-stack-2: SourceSansProRegular, NewsGothicMT, SourceSansPro-Light, Calibri, Sans-Serif;
+$font-stack-3: SourceSansProBold, Calibri, Sans-Serif;
+$font-stack-4: SourceSansPro-Light, Calibri, Sans-Serif;
+
+$light-yellow: #FCFAE3;
+$light-pink: #FDE8E7;
+
+
+// "main" elements go here
+
+a.main-button {
+  text-decoration: none;
+}
+
+.main-container {
+  //@include outer-container;
+  padding-bottom: 3em;  
+
+  .element-container {
+    // @include span-columns(10);
+    // @include pad(70px default default 130px);
+    margin-top: 4.5em;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    .photo-container-1 {
+      display: inline-block;
+      padding-right: 3em;
+
+      /* Extra small devices */ 
+      @media (max-width: 768px) {
+
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) and (max-width: 992px) {
+
+      }      
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) and (max-width:1200px) { 
+        margin-left: 3em;
+      }      
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        margin-left: 10em;
+      }
+
+      .main-header {
+        // @include span-columns (7 of 10);
+        z-index: 10;
+        font-family: $font-stack-1;
+        font-size: 6.4em; 
+        display: inline-block;
+        position: absolute;
+        margin-bottom: -3em;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) { 
+
+        } 
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 992px) {  
+          
+        }       
+
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) and (max-width:1200px) { 
+          margin-left: -0.4em;
+        }       
+
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+          margin-left: -0.7em;
+        }
+
+      }
+
+
+      .main-photo-1 {
+        max-width: 420px;
+        z-index: -1;
+      }
+    }
+
+    .photo-container-2 {
+      // display: inline-block;
+
+      /* Extra small devices */ 
+      @media (max-width: 768px) {
+
+      }
+
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) and (max-width: 992px) {
+
+      }      
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) and (max-width:1200px) { 
+        margin-left: -3em;
+      }      
+
+      /* Large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { 
+        margin-left: -10em;
+      }
+
+      .main-photo-2 {
+        padding-top: 1em;
+        padding-bottom: 5em;
+        max-width: 450px; 
+        z-index: -1;
+      }
+
+      .main-buttons {
+        position: relative;
+        bottom: 3em;
+
+        button {
+          background-color: #000000;
+          color: white;
+          border: solid;
+          border-width: 2px;
+          border-color: black;
+          display: block;
+          margin-bottom: 0.4em;
+          width: 450px;
+          text-transform: uppercase;
+          font-family: $font-stack-2;
+          font-size: 0.9em;
+          letter-spacing: 2px;
+        }
+
+        button:hover {
+          background-color: white;
+          color: black;
+          border-color: black;
+          border: solid;
+          border-width: 2px;
+        }
+
+        #about {
+          padding: 0.4em 0em 0.4em 0em;
+        }
+
+        #links {
+          padding: 0.4em 0em 0.4em 0em;
+        }
+
+        #portfolio {
+          padding: 0.4em 0em 0.4em 0em;
+        }
+
+        #projects {
+          padding: 0.4em 0em 0.4em 0em;
+        }
+
+        #contact {
+          padding: 0.4em 0em 0.4em 0em;
+        }
+      }
+    }
+  } 
+}
+
+// "about" elements go here
+
+.about-container { // try to make this stretch out bottom
+  // @include span-columns(10);
+  // @include pad(3em 0em 7em 0em);
+  margin: 20em auto 0em auto;
+
+
+  background-color: $light-yellow;
+  height: auto;
+  -webkit-transform: skewY(-1.5deg);
+  -moz-transform: skewY(-1.5deg);
+  -ms-transform: skewY(-1.5deg);
+  -o-transform: skewY(-1.5deg);
+  transform: skewY(-1.5deg);
+
+  .hello-world {
+    margin-top: -0.6em;
+    -webkit-transform: skewY(1.5deg);
+    -moz-transform: skewY(1.5deg);
+    -ms-transform: skewY(1.5deg);
+    -o-transform: skewY(1.5deg);
+    transform: skewY(1.5deg);
+    font-family: $font-stack-3;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .about-description {
+    padding: 4em 10em 8em 10em;
+    -webkit-transform: skewY(1.5deg);
+    -moz-transform: skewY(1.5deg);
+    -ms-transform: skewY(1.5deg);
+    -o-transform: skewY(1.5deg);
+    transform: skewY(1.5deg);
+    font-family: $font-stack-4;
+    font-size: 1.05em;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+
+// links
+.links-container { // try to make this stretch out bottom
+  // @include span-columns(10);
+  margin: 1em 0em 0em 0em;
+  padding: 3em 0em 7.5em 0em;
+  background-color: $light-pink;
+  height: auto;
+  -webkit-transform: skewY(1.5deg);
+  -moz-transform: skewY(1.5deg);
+  -ms-transform: skewY(1.5deg);
+  -o-transform: skewY(1.5deg);
+  transform: skewY(1.5deg);
+
+  #links-header {
+    font-family: $font-stack-3;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 0em 0em 0.4em 1.6em;
+    -webkit-transform: skewY(-1.5deg);
+    -moz-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+    -o-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+
+  }
+
+  .links-button-container {
+    // @include pad(0em 0.6em 0em 0.6em);
+    text-align: center;
+    -webkit-transform: skewY(-1.5deg);
+    -moz-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+    -o-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+
+    button {
+      background-color: black;
+      color: white;
+      border: solid;
+      border-width: 2px;
+      border-color: black;
+      margin-bottom: 0.4em;
+      width: 171px;
+      text-transform: uppercase;
+      font-family: $font-stack-2;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      padding: 0.5em 0em 0.5em 0.5em;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      border: solid;
+      border-width: 2px;
+    }
+
+    /*
+    #($all-buttons) {
+      background-color: white;
+      color: black;
+    }
+    */
+
+    #twitter {
+      
+    } 
+
+    #resume {
+    
+    } 
+
+    #instagram {  
+
+    } 
+
+    #github { 
+
+    } 
+
+    #linkedin { 
+
+    }
+  }
+}
+
+
+// portfolio
+.portfolio-container {
+  // @include span-columns(10);
+  margin: 7em 0em 0em 0em;
+  padding: 9em 0em 4em 0em;
+  background-color: white;
+  height: auto;
+  //display: inline;
+
+  #portfolio-header {
+    font-family: $font-stack-3;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 0em 1.3em 0.4em 0em;
+    text-align: right;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .portfolio {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: auto;
+    height: auto;
+    background-color: azure; 
+    // margin: 2em 0em 2em 0em;
+    text-align: center;
+    
+    padding: 5.5em 3em 7em 3em;
+
+    .portfolioImg {
+      text-align: center;
+      padding-bottom: 5em;
+
+      img {
+        width: 250px;
+        height: auto;
+        margin: 1em;
+        vertical-align: middle;
+      }
+
+      img:hover {
+        border: solid;
+        border-color: azure;
+        border-width: 10px;
+      }
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      border: solid;
+      border-width: 2px;
+      border-color: black;
+      margin-bottom: 0.4em;
+      width: 171px;
+      text-transform: uppercase;
+      font-family: $font-stack-2;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      padding: 0.5em 0em 0.5em 0.5em;
+    }
+
+    button:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      border: solid;
+      border-width: 2px;
+    }
+  }
+}
+
+// projects
+.projects-container {
+  // @include span-columns(10);
+  margin: 1em 0em 0em 0em;
+  padding: 8em 0em 4em 0em;
+  background-color: white;
+  height: auto;
+
+  #projects-header {
+
+    a {
+      color: black;
+    }
+
+    font-family: $font-stack-3;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 0em 0em 0.4em 1.6em;
+    text-align: left;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    color: black;
+  }
+
+  .projects {
+    //overflow-x: scroll;
+    //overflow-y: hidden;
+    width: auto;
+    height: auto; // should be 23em
+    background-color: azure; // temporary until we request from tumblr api
+    // margin: 2em 0em 2em 0em;
+    font-family: $font-stack-4;
+    text-align: center;
+    font-family: $font-stack-4;
+    padding: 1.5em 0em 1.5em 0em;   
+    
+    table {
+      margin-right: auto;
+      margin-left: auto;
+      border-collapse: separate;
+      border-spacing: 4em;
+      text-align: center;
+
+      tr {
+        margin-right: auto;
+        margin-left: auto;
+
+        td {
+          width: 300px;
+          height: 300px;
+          padding: 1.7em;
+          background-color: black;
+          color: white;
+          vertical-align: middle;
+
+          border-size: 2px;
+          border: solid;
+          border-color: black;
+
+          a {
+            text-decoration: none;
+            color: white;
+
+            span.proj-header {
+                font-size: 3em;
+              }           
+
+            span.proj-description {
+                font-size: 15px;
+              }     
+          }
+        }
+
+        td:hover {
+          background-color: white;
+          color: black;
+          border-size: 2px;
+          border: solid;
+          border-color: black;
+
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.contact-container {
+  // @include span-columns(10);
+  margin: 10em 0em 0em 0em;
+  padding: 6em 0em 6em 0em;
+  background-color: black;
+  height: auto;
+  color: white;
+  text-align: center;
+
+  #contact-header {
+    font-family: $font-stack-3;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 0.15em; 
+  }
+
+  .contact-text {
+    font-family: $font-stack-4;
+    font-size: 1.05em;
+    letter-spacing: 1px;
+    padding-bottom: 2.8em;
+  }
+
+  a {
+
+    text-decoration: none;
+    color: white;
+    
+    button {
+      font-family: $font-stack-2;
+      text-transform: uppercase;
+      border: solid;
+      border-color: white;
+      border-width: 3px;
+      background-color: black;
+      color: white;
+      font-size: 0.9em;
+      letter-spacing: 2px;
+      width: 271px;
+      height: 45px;
+    } 
+  }
+
+  a:hover {
+    color: black;
+
+    button {
+      background-color: white;
+      color: black;
+      border-color: white;
+      border: solid;
+      border-width: 3px;
+    }
+  }
+}
+
+
+// yeoman did stuffies here
+
