@@ -69,67 +69,77 @@ a.main-button {
 }
 
 .main-container {
-  //@include outer-container;
   padding-bottom: 3em;  
 
   .element-container {
-    // @include span-columns(10);
-    // @include pad(70px default default 130px);
     margin-top: 4.5em;
     margin-right: 15px;
     margin-left: 15px;
 
     .photo-container-1 {
-      display: inline-block;
-      padding-right: 3em;
 
       /* Extra small devices */ 
       @media (max-width: 768px) {
-
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
 
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) and (max-width: 992px) {
-
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }      
 
       /* Medium devices (desktops, 992px and up) */
       @media (min-width: 992px) and (max-width:1200px) { 
         margin-left: 3em;
+        display: inline-block;
+        padding-right: 3em;
       }      
 
       /* Large devices (large desktops, 1200px and up) */
       @media (min-width: 1200px) { 
         margin-left: 10em;
+        display: inline-block;
+        padding-right: 3em;
       }
 
       .main-header {
-        // @include span-columns (7 of 10);
         z-index: 10;
         font-family: $font-stack-1;
-        font-size: 6.4em; 
-        display: inline-block;
         position: absolute;
         margin-bottom: -3em;
         text-transform: uppercase;
 
         @media (max-width: 768px) { 
-
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          font-size: 5.4em;
         } 
 
         /* Small devices (tablets, 768px and up) */
         @media (min-width: 768px) and (max-width: 992px) {  
-          
+          margin-left: 2em;
+          margin-right: auto;
+          display: block;
+          font-size: 5.4em; 
         }       
 
         /* Medium devices (desktops, 992px and up) */
         @media (min-width: 992px) and (max-width:1200px) { 
           margin-left: -0.4em;
+          display: inline-block;
+          font-size: 6.4em; 
         }       
 
         /* Large devices (large desktops, 1200px and up) */
         @media (min-width: 1200px) { 
           margin-left: -0.7em;
+          display: inline-block;
+          font-size: 6.4em; 
         }
 
       }
@@ -138,6 +148,22 @@ a.main-button {
       .main-photo-1 {
         max-width: 420px;
         z-index: -1;
+
+        /* Extra small devices */ 
+        @media (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 360px;
+        } 
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 992px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding-bottom: 2em;
+        }       
       }
     }
 
@@ -146,22 +172,28 @@ a.main-button {
 
       /* Extra small devices */ 
       @media (max-width: 768px) {
-
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
 
       /* Small devices (tablets, 768px and up) */
       @media (min-width: 768px) and (max-width: 992px) {
-
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }      
 
       /* Medium devices (desktops, 992px and up) */
       @media (min-width: 992px) and (max-width:1200px) { 
         margin-left: -3em;
+        display: inline-block;
       }      
 
       /* Large devices (large desktops, 1200px and up) */
       @media (min-width: 1200px) { 
         margin-left: -10em;
+        display: inline-block;
       }
 
       .main-photo-2 {
@@ -169,11 +201,43 @@ a.main-button {
         padding-bottom: 5em;
         max-width: 450px; 
         z-index: -1;
+
+        /* Extra small devices */ 
+        @media (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 360px;
+        } 
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 992px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding-bottom: 2em;
+        }       
       }
 
       .main-buttons {
         position: relative;
         bottom: 3em;
+
+        /* Extra small devices */ 
+        @media (max-width: 768px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 360px;
+        } 
+
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 992px) {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding-bottom: 2em;
+        } 
 
         button {
           background-color: #000000;
@@ -188,6 +252,20 @@ a.main-button {
           font-family: $font-stack-2;
           font-size: 0.9em;
           letter-spacing: 2px;
+
+          @media (max-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 360px;
+          }   
+
+          /* Small devices (tablets, 768px and up) */
+          @media (min-width: 768px) and (max-width: 992px) {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          } 
         }
 
         button:hover {
@@ -224,11 +302,17 @@ a.main-button {
 
 // "about" elements go here
 
-.about-container { // try to make this stretch out bottom
-  // @include span-columns(10);
-  // @include pad(3em 0em 7em 0em);
-  margin: 20em auto 0em auto;
+.about-container {       
 
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width:1200px) {  
+    margin: 20em auto 0em auto;
+  }       
+
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    margin: 20em auto 0em auto;
+  }
 
   background-color: $light-yellow;
   height: auto;
@@ -295,13 +379,21 @@ a.main-button {
   }
 
   .links-button-container {
-    // @include pad(0em 0.6em 0em 0.6em);
     text-align: center;
     -webkit-transform: skewY(-1.5deg);
     -moz-transform: skewY(-1.5deg);
     -ms-transform: skewY(-1.5deg);
     -o-transform: skewY(-1.5deg);
     transform: skewY(-1.5deg);
+
+    @media (max-width: 768px) {
+      padding: 0em 1.2em;
+    }   
+
+  /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 992px) {
+      padding: 0em 1.2em;
+    } 
 
     button {
       background-color: black;
@@ -456,12 +548,9 @@ a.main-button {
   }
 
   .projects {
-    //overflow-x: scroll;
-    //overflow-y: hidden;
     width: auto;
-    height: auto; // should be 23em
-    background-color: azure; // temporary until we request from tumblr api
-    // margin: 2em 0em 2em 0em;
+    height: auto; 
+    background-color: azure; 
     font-family: $font-stack-4;
     text-align: center;
     font-family: $font-stack-4;
