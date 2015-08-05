@@ -661,18 +661,25 @@ a.main-button {
   text-align: center;
 
   #contact-header {
+    @media (max-width: 768px) {
+      font-size: 3.4em;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 4em;
+    }   
+
     font-family: $font-stack-3;
     font-size: 4em;
     text-transform: uppercase;
     text-decoration: underline;
-    padding-bottom: 0.15em; 
   }
 
   .contact-text {
     font-family: $font-stack-4;
     font-size: 1.05em;
     letter-spacing: 1px;
-    padding: 0em 2.8em 2.8em;
+    padding: 2.8em;
   }
 
   a {
@@ -696,11 +703,7 @@ a.main-button {
 
   a:hover {
     color: black;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    
 
     button {
       background-color: white;
@@ -708,6 +711,11 @@ a.main-button {
       border-color: white;
       border: solid;
       border-width: 3px;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
     }
   }
 }
