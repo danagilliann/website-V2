@@ -357,14 +357,21 @@ a.main-button {
     -o-transform: skewY(1.5deg);
     transform: skewY(1.5deg);
     font-family: $font-stack-3;
-    font-size: 4em;
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
+
+    @media (max-width: 769px) {
+      font-size: 3.7em;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 768px) {  
+      font-size: 4em;
+    }
   }
 
   .about-description {
-    padding: 4em 10em 8em 10em;
     -webkit-transform: skewY(1.5deg);
     -moz-transform: skewY(1.5deg);
     -ms-transform: skewY(1.5deg);
@@ -374,6 +381,15 @@ a.main-button {
     font-size: 1.05em;
     text-align: center;
     letter-spacing: 2px;
+
+    @media (max-width: 769px) {
+      padding: 4em 4em 8em 4em;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 768px) {  
+      padding: 4em 10em 8em 10em;
+    }
   }
 }
 
@@ -679,7 +695,14 @@ a.main-button {
     font-family: $font-stack-4;
     font-size: 1.05em;
     letter-spacing: 1px;
-    padding: 2.8em;
+
+    @media (max-width: 768px) {
+      padding: 2.8em;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0em 2.8em 2.8em;
+    }  
   }
 
   a {
