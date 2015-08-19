@@ -16,8 +16,8 @@ $.ajax({
     }
 });
 
-
 $(document).ready(function() {
+
 	$('body').on('click', '#about', function() {
 
 	$('html, body').animate({
@@ -57,7 +57,7 @@ $(document).ready(function() {
 	$('body').on('mouseenter mouseleave', 'img.main-photo-1', function() {
 	  $('img.main-photo-1').attr({
 	    src: $(this).attr('data-photoone-src')
-	    , 'data-photoone-src': $(this).attr('src')
+	    , 'data-photoone-src': $(this).attr('src'),
 	  });
 	});	
 
