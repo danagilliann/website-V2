@@ -65,6 +65,24 @@ li {
   list-style-type: none;
 }
 
+h1.title {
+	@media (max-width: 992px) {
+		font-size: 0.9em;
+	}
+	@media (min-width: 992px) {
+		font-size: 1em;
+	}
+}
+
+h1.text { 
+	font-size: 15px;
+	display: inline;
+}
+
+h1.hidden { 
+	font-size: 1px;
+	visibility: hidden;
+}
 
 // "main" elements go here
 
@@ -247,8 +265,6 @@ a.main-button {
           margin-left: auto;
           margin-right: auto;
           display: block;
-          width: 360px;
-          //padding-top: 4em;
         } 
 
         /* Small devices (tablets, 768px and up) */
@@ -329,7 +345,6 @@ a.main-button {
 // "about" elements go here
 
 .about-container {       
-
   /* Medium devices (desktops, 992px and up) */
   @media (min-width: 992px) and (max-width:1200px) {  
     margin: 15em 0em 0em 0em;
@@ -347,7 +362,7 @@ a.main-button {
   -ms-transform: skewY(-1.5deg);
   -o-transform: skewY(-1.5deg);
   transform: skewY(-1.5deg);
-  //margin: 0em;
+	margin: 0;
 
   .hello-world {
     margin-top: -0.6em;
@@ -362,7 +377,7 @@ a.main-button {
     text-align: center;
 
     @media (max-width: 769px) {
-      font-size: 3.2em;
+      font-size: 3em;
     }
 
     /* Large devices (large desktops, 1200px and up) */
@@ -496,25 +511,30 @@ a.main-button {
 }
 
 
-// portfolio
 .portfolio-container {
-  // @include span-columns(10);
   margin: 7em 0em 0em 0em;
   padding: 9em 0em 4em 0em;
   background-color: white;
   height: auto;
-  //display: inline;
 
   #portfolio-header {
     font-family: $font-stack-3;
-    font-size: 3.7em;
     text-transform: uppercase;
     text-decoration: underline;
-    padding: 0em 1.3em 0.4em 0em;
     text-align: right;
     overflow-x: scroll;
     overflow-y: hidden;
-  }
+		
+		@media (max-width: 768px) {
+			font-size: 3em;
+			padding-right: 0.4em;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 3.7em;
+			padding: 0em 1.3em 0.4em 0em;
+		}
+	}
 
   .portfolio {
     overflow-x: scroll;
@@ -525,22 +545,44 @@ a.main-button {
     margin: 2em 0em;
     text-align: center;
     
-    padding: 5.5em 3em 7em 3em;
+
+		@media (max-width: 768px) {
+			padding-top: 2em;
+			padding-bottom: 7em;
+		}
+  	                            
+  	@media (min-width: 768px) {
+			padding: 5.5em 3em 7em 3em;
+  	}
 
     .portfolioImg {
       text-align: center;
       padding-bottom: 5em;
 
       img {
-        width: 230px;
         height: auto;
         margin: 2em;
         vertical-align: middle;
+
+				@media (max-width: 768px) {
+					width: 200px;
+				}
+				                            
+				@media (min-width: 768px) {
+					width: 230px;
+				}
       }
 
       img:hover {
-        width: 250px;
-        height: auto;
+				@media (max-width: 768px) {    
+					width: 230px;
+				}
+				                            
+				@media (min-width: 768px) {
+					width: 250px;
+				}
+        
+				height: auto;
         -webkit-transition: all 0.5s ease;
         -moz-transition: all 0.5s ease;
         -o-transition: all 0.5s ease;
@@ -589,23 +631,37 @@ a.main-button {
 
   #projects-header {
     font-family: $font-stack-3;
-    font-size: 3.7em;
     text-transform: uppercase;
     text-decoration: underline;
-    padding: 0em 0em 0.4em 1.6em;
     text-align: left;
     overflow-x: scroll;
     overflow-y: hidden;
-    color: black;
-  }
+
+		@media (max-width: 768px) {
+			font-size: 3em;
+			padding-left: 0.3em;
+		}                               
+		                                	
+		@media (min-width: 768px) {
+			font-size: 3.7em;
+			padding: 0em 0em 0.4em 1.3em;
+		}
+	}
 
   .project-card-container {
     background-color: azure;
     display: block;
-    //margin: auto;
     position: relative;
     text-align: center;
-    padding: 6em 0em;
+		margin: 0;
+
+		@media (max-width: 768px) {
+			padding: 3em 0em;	
+		}                               
+		                                	
+		@media (min-width: 768px) {
+			padding: 6em 0em;	
+		}
 
     a {
       color: white;
@@ -613,8 +669,6 @@ a.main-button {
 
       .project {
         background-color: black;
-        width: 300px;
-        height: 300px;
         margin: 10px 30px;
         display: inline-block;
         position: relative;
@@ -623,12 +677,29 @@ a.main-button {
         border-radius: 5px;
         color: white;
         font-family: $font-stack-4;
-        padding: 2em;
         border-style: solid;
 
+				@media (max-width: 768px) {
+					width: 200px; 			
+					height: 200px;  	
+					padding: 0.4em 1em;
+				}                               
+				                                	
+				@media (min-width: 768px) {
+					width: 300px; 	
+	  			height: 300px;
+					padding: 2em;
+				}
+
         p.proj-header {
-          font-size: 3em;
-        }
+					@media (max-width: 768px) {
+						font-size: 2.1em;
+					}                               
+					                                	
+					@media (min-width: 768px) {
+						font-size: 3em; 
+					} 
+				}
 
         p.short-header {
           margin-top: 50px;
@@ -636,6 +707,15 @@ a.main-button {
 
         p.long-header {
           margin-top: 30px;
+
+					@media (max-width: 768px) {
+						margin-top: 24px;	
+					}                               
+					                                	
+					@media (min-width: 768px) {
+						margin-top: 30px;
+					}
+
         }
 
         p.proj-description {
@@ -669,7 +749,7 @@ a.main-button {
 
 
 .contact-container {
-  margin-top: 10em;
+	margin: 10em 0em 0em; 
   padding: 6em 0em;
   background-color: black;
   height: auto;
@@ -678,7 +758,7 @@ a.main-button {
 
   #contact-header {
     @media (max-width: 768px) {
-      font-size: 3.4em;
+      font-size: 3em;
     }
 
     @media (min-width: 768px) {
