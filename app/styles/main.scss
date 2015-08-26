@@ -71,6 +71,7 @@ p {
 
 h1 { 
 	font-weight: 500;
+	margin: 0;
 }
 
 h1.title {
@@ -695,6 +696,8 @@ a.main-button {
 				}
 
         h1.proj-header {
+					font-weight: 100;
+
 					@media (max-width: 768px) {
 						font-size: 2.1em;
 					}                               
@@ -705,6 +708,8 @@ a.main-button {
 				}
 
         h1.short-header {
+					font-weight: 100;
+
 					@media (max-width: 768px) {
 						margin-top: 40px;
 					}
@@ -715,6 +720,8 @@ a.main-button {
         }
 
         h1.long-header {
+					font-weight: 100;	
+					
 					@media (max-width: 768px) {
 						margin-top: 28px;	
 					}                               
